@@ -1,0 +1,20 @@
+{
+  "name": "ipsj",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "build:platex": "platex -kanji=utf8 main",
+    "build:pbibtex": "pbibtex -kanji=utf8 main",
+    "build:dvipdfmx": "dvipdfmx main",
+    "clean": "rm .DS_Store *.aux *.bbl *.blg *.dvi *.log; exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mh61503891/ipsj.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/mh61503891/ipsj/issues"
+  },
+  "homepage": "https://github.com/mh61503891/ipsj#readme"
+}
