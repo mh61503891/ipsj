@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "build:platex": "platex -kanji=utf8 main",
-    "build:pbibtex": "pbibtex -kanji=utf8 main",
-    "build:dvipdfmx": "dvipdfmx main",
+    "build:tex": "platex -kanji=utf8 main",
+    "build:bib": "pbibtex -kanji=utf8 main",
+    "build:dvi": "dvipdfmx main",
+    "build": "npm run clean && npm run build:tex && npm run build:bib && npm run build:tex && npm run build:tex && npm run build:dvi",
     "clean": "rm .DS_Store *.aux *.bbl *.blg *.dvi *.log; exit 0"
   },
   "repository": {
